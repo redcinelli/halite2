@@ -1,0 +1,6 @@
+# remove replay files
+*.htl
+
+# pycache 
+
+__pycache__/*
