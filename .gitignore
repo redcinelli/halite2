@@ -1,6 +1,11 @@
 # remove replay files
-*.htl
+*.hlt
 
-# pycache 
+# pycache
+*/__pycache__/*
 
-__pycache__/*
+# remove submission file
+*.zip
+
+# remove python env
+hlt_env/*
