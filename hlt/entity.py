@@ -206,7 +206,7 @@ class Planet(Entity):
 class Ship(Entity):
     """
     A ship in the game.
-    
+
     :ivar id: The ship ID.
     :ivar x: The ship x-coordinate.
     :ivar y: The ship y-coordinate.
@@ -235,6 +235,7 @@ class Ship(Entity):
         self.planet = planet if (docking_status is not Ship.DockingStatus.UNDOCKED) else None
         self._docking_progress = progress
         self._weapon_cooldown = cooldown
+        self.role = 0
 
     def thrust(self, magnitude, angle):
         """
