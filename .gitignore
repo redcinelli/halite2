@@ -9,3 +9,6 @@
 
 # remove python env
 hlt_env/*
+
+# remove log
+*.log
