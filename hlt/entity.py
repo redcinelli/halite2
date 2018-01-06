@@ -134,6 +134,14 @@ class Planet(Entity):
         """
         return self.owner is not None
 
+    def who_own(self):
+        """
+        Determines if the planet has an owner.
+        :return: True if owned, False otherwise
+        :rtype: bool
+        """
+        return self.owner
+
     def is_full(self):
         """
         Determines if the planet has been fully occupied (all possible ships are docked)
